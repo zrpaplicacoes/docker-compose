@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+export IMAGE_TAG=${IMAGE_TAG:-latest}
+
+docker build -t zrpaplicacoes/docker-compose:$IMAGE_TAG .
+docker push zrpaplicacoes/docker-compose:$IMAGE_TAG
